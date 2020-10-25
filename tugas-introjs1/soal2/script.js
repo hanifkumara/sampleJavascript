@@ -1,15 +1,15 @@
-const mtk = 80;
-const bahasaIndonesia = 80;
-const bahasaInggris = 100;
-const ipa = 80;
+const mtk = 60;
+const bahasaIndonesia = 55;
+const bahasaInggris = 59;
+const ipa = 50;
 
-if (mtk <= 0 || mtk === null) {
+if (typeof(mtk) !== 'number') {
     console.log('Nilai Matematika harus diisi')
-} else if (bahasaIndonesia <= 0 || bahasaIndonesia === null) {   
+} else if (typeof (bahasaIndonesia) !== 'number') {   
     console.log('Nilai Bahasa Indonesia harus diisi')
-} else if (bahasaInggris <= 0 || bahasaInggris === null) {   
+} else if (typeof (bahasaInggris) !== 'number') {   
     console.log('Nilai Bahasa Indonesia harus diisi')
-} else if (ipa <= 0 || ipa === null) {
+} else if (typeof (ipa) !== 'number') {
     console.log('Nilai Bahasa Indonesia harus diisi')
 } else {
     const jumlahNilai = mtk + bahasaIndonesia + bahasaInggris + ipa

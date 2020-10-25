@@ -8,19 +8,19 @@ const biodata = {
             name: 'SDN Ploso 2 Nganjuk',
             yearIn: '2008',
             yearOut: '2014',
-            major: null
+            majors: null
         },
         {
             name: 'SMP N 5 Nganjuk',
             yearIn: '2014',
             yearOut: '2016',
-            major: null
+            majors: null
         },
         {
             name: 'SMK Muhammadiyah 1 Sukoharjo',
             yearIn: '2017',
             yearOut: '2020',
-            major: 'Rekayasa Perangkat Lunak'
+            majors: 'Rekayasa Perangkat Lunak'
         }
     ],
     skills: [

@@ -19,8 +19,7 @@ data2.name = 'Hanif Kumara'
 data2.email = 'hanifkumara00@gmail.com'
 data2.hobby = 'olahraga'
 
-const { name, email, hobby } = data2
-console.log(`name: ${name}, email: ${email}, hobby: ${hobby}`)
+console.log(data2)
 
 // b.
 const { street, city } = data.address
