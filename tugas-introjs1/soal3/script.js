@@ -10,4 +10,5 @@ if (typeof printSegitiga !== "number") {
         }
         s += '\n'
     }
+    console.log(s)
 }
