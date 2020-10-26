@@ -39,3 +39,6 @@ const biodata = {
     ],
     interestInCoding: true
 }
+
+const sekolah = biodata.schoolList[2].name
+console.log(sekolah)

@@ -14,14 +14,16 @@ let data = {
 }
 
 // a.
-data2 = { ...data }
-data2.name = 'Hanif Kumara'
-data2.email = 'hanifkumara00@gmail.com'
-data2.hobby = 'olahraga'
+const data2 = {
+     ...data ,
+    name : 'Hanif Kumara',
+    email : 'hanifkumara00@gmail.com',
+    hobby : 'olahraga'
+}
 
 console.log(data2)
 
 // b.
-const { street, city } = data.address
+// const { street, city } = data.address
 
-console.log(`street : ${street}, city: ${city}`)
+// console.log(`street : ${street}, city: ${city}`)
