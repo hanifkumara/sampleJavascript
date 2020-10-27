@@ -24,6 +24,6 @@ const data2 = {
 console.log(data2)
 
 // b.
-// const { street, city } = data.address
+const { street, city } = data.address
 
-// console.log(`street : ${street}, city: ${city}`)
+console.log(`street : ${street}, city: ${city}`)
