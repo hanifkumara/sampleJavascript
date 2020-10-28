@@ -3,7 +3,7 @@ const getmonth = callback => {
         let error = false 
         let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Agust', 'October', 'November', 'December']
         if (!error) {
-            callback( month)
+            callback(month)
         } else {
             callback(new Error('Sorry Data Not Found', []))
         }
