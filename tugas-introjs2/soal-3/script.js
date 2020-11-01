@@ -5,13 +5,15 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
         console.log("Jumlah angka dalam dataArray tidak ada")
     } else {
         let coba = dataArray.filter(value => {
-            if (value > nilaiAwal && value < nilaiAkhir) {
-                return value
-            }
+            return value > nilaiAwal && value < nilaiAkhir
         })
-        coba.sort((a, b) => a - b)
-        console.log(coba)
+        if (coba.length <= 0) {
+            console.log('Data tidak ditemukan')
+        } else {
+            coba.sort((a, b) => a - b)
+            console.log(coba)
+        }
     }
 }
 
-seleksiNilai(10,20,[2,25,4,14,17,30,8])
+seleksiNilai(10,30,[3,25,4,14,17])

@@ -3,13 +3,13 @@ const namaLengkap = 'Hanif Kumara'
 let umur = 19
 console.log(isNaN(namaLengkap))
 
-// 2.Fungsi parseInt merupakan fungsi dari javascript untuk mengubah String menjadi Integer atau mengubah kebilangan bulat.Artinya jika bilangan didalamnya mengandung desimal maka akan dikonversikan ke bilangan bulat.
+// 2.Fungsi parseInt merupakan fungsi dari javascript untuk mengubah kebilangan bulat. Maksudnya jika bilangan didalamnya mengandung desimal maka akan dikonversikan ke bilangan bulat.
 const pembagian = (bilPertama, bilKedua) => {
     let bagi = parseInt(bilPertama/bilKedua)
     let hasil = `${bilPertama} dibagi ${bilKedua} adalah ${bagi}`
     return hasil
 }
-console.log(pembagian(20,7))
+console.log(pembagian(23,7))
 
 // 3. Method toLowerCase mengembalikan nilai string yang diubah menjadi huruf kecil.
 let quote = "BUILD SOMETHING AMAZING"
@@ -21,7 +21,8 @@ console.log(sekolah.toUpperCase())
 
 // 5. Metode ini membagi objek String menjadi array string dengan memisahkan string menjadi beberapa substring.
 let buah = "Soto Rawon Sate Pecel Tahu Tempe Coca-cola"
-let result = buah.split(" ", 6 )
+// split mempunyai dua parameter, separator dan limit
+let result = buah.split(" ", 2)
 console.log(result)
 
 

@@ -3,18 +3,18 @@ const name = ['Abigail', 'Alexandra', 'Alison', 'Amanda', 'Angela', 'Bella', 'Ca
 const searchName = (keyword, limit, callback) => {
     const names = name;
     const lowerKeyword = keyword.toLowerCase();
-    let findName = [];
-    names.map(name => {
-    const lowerName = name.toLowerCase();
+    let cariNama = [];
+    names.map(value => {
+    const lowerName = value.toLowerCase();
     const result = lowerName.search(lowerKeyword)
-    if(result > -1 && findName.length < limit) {
-      findName = [...findName, name];
+    if(result > -1 && cariNama.length < limit) {
+      cariNama = [...cariNama, value];
     }
   })
-  return callback(findName);
+  return callback(cariNama);
 }
 const printName = (value) => {
   console.log(value)
 } 
 
-searchName('ro', 3, printName)
+searchName('A', 3, printName)
