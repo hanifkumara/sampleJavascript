@@ -20,9 +20,9 @@ let sekolah = "smk muhammadiyah 1 sukoharjo"
 console.log(sekolah.toUpperCase())
 
 // 5. Metode ini membagi objek String menjadi array string dengan memisahkan string menjadi beberapa substring.
-let buah = "Soto Rawon Sate Pecel Tahu Tempe Coca-cola"
+let makanan = "Soto Rawon Sate Pecel Tahu Tempe Coca-cola"
 // split mempunyai dua parameter, separator dan limit
-let result = buah.split(" ", 2)
+let result = makanan.split(" ", 4)
 console.log(result)
 
 
