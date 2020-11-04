@@ -39,11 +39,13 @@ console.log(resultKopi)
 let  hewan = ["Buku", "Kancil", "Jerapah" ,"Kucing", "Tomat", "Laptop"]
 let resultHewan = hewan.slice(1,4)
 console.log(resultHewan)
+console.log(hewan)
 
 //  9. Method pop() menghapus elemen terakhir dari array dan mengembalikan elemen tersebut.
 let Hobby = ["Olahraga", "Mendengarkan Musik", "Game", "Rebahan"]
 let popped = Hobby.pop()
 console.log(Hobby)
+console.log(popped)
 
 //  10. Metode reverse membalik urutan elemen dalam larik.
 let Keseharian = ["Siap Belajar", "Sarapan", "Mandi", "Bangun Tidur"]
