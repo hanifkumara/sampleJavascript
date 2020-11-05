@@ -1,41 +1,26 @@
 const divideAndSort = num => {
+    // Statement jika tipe data param num bukan number
     if (typeof num !== 'number') {
-        console.log('Tipe data harus Number!!!')
+        console.log('Tipe data harus number')
         return;
-    } else if (num.length <= 1) {
-        return num
     }
 
-    // Menjadikan deret angka ke array
-    const numToArr = num.toString().split('')
+    // Merubah tipe data num menjadi array dan memisah angka 0 menggunakan split
+    const numToArr = num.toString().split(0)
 
-    let numberZero = []
-    numToArr.map((value, index) => {
-        if (value == '0') {
-            numberZero.push(index)
-        }
+    // Looping numToArr menggunakan map dan ditampung variabel proccessSort 
+    const proccessSort = numToArr.map(value => {
+
+        //Memisah setiap index numToArr menggunakan split(), mengurutkan menggunakan sort(), menggabungkan lagi angka yang sudah urut menjadi string menggunakan join() 
+        const result = value.split('').sort().join('')
+
+        // Mengembalikan nilai result
+        return result
     })
 
-    // Mendapatkan numberZero
-    const spaceOne = numberZero[0]
-    const spaceTwo = numberZero[1] - 1
-
-    console.log(spaceTwo)
-
-    // Menghilangkan 0
-    numToArr.splice(spaceOne, 1)
-    numToArr.splice(spaceTwo, 1)
-
-    const numberOne = numToArr.slice(0, spaceOne)
-    const numberTwo = numToArr.slice(spaceOne, spaceTwo)
-    const numberThree = numToArr.slice(spaceTwo, numToArr.length)
-    
-    numberOne.sort((a, b) => a - b)
-    numberTwo.sort((a, b) => a - b) 
-    numberThree.sort((a, b) => a - b)
-
-    const gabung = numberOne.concat(numberTwo).concat(numberThree)
-    const result = gabung.join('')
-    console.log(result)
+    // Menampilkan hasil proccessSort dan digabungkan menjadi string menggunakan join()
+    console.log(proccessSort.join(''))
 }
-divideAndSort(10203)
+
+// eksekusi function dan mengisi parameternya
+divideAndSort(124124023)
